@@ -1,0 +1,84 @@
+body{
+	background: #0b1c33; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  #1e5799 0%, #2989d8 24%, #207cca 64%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0b1c33), color-stop(10%,#0f2540), color-stop(20%,#15314f), color-stop(30%,#153353), color-stop(40%,#1a3f63), color-stop(50%,#255279), color-stop(60%,#285880), color-stop(70%,#305e87), color-stop(80%,#446d92), color-stop(90%,#537495), color-stop(100%,#5b7696)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* IE10+ */
+	background: linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b1c33', endColorstr='#5b7696',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+section{
+	position: relative;
+	width: 725px;
+	margin: 267px auto;
+}
+h1,h3,p{
+	text-transform: uppercase;
+	font-weight: 300;
+}
+h1{
+	font-size: 48px;
+	letter-spacing: 0.11em;
+	margin-top: 22px;
+	margin-bottom: 0;
+}
+h3{
+	font-size: 32px;
+	letter-spacing: 0.11em;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+h1 span{
+	font-weight: bold;
+}
+p{
+	font-size: 16px;
+	text-align: left;
+	margin-top: 90px;
+	letter-spacing: 0.1em;
+	margin-bottom: 15px;
+}
+hr{
+	width: 90%;
+}
+.star{
+	margin: 0 30px;
+}
+.sign-btn, .star-btn{
+	width: 300px;
+	height: 60px;
+	background-color: #0e304d;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	font-size: 22px;
+	color: #fff;
+}
+.star-btn{
+	font-weight: 300;
+	border-color: #ffd000;
+	color: #ffd000;
+	text-align: left;
+}
+.sign-btn{
+	margin-top: 100px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.sign-btn:hover, .star-btn:hover{
+	background-color: #083e5b;
+}
+.sign-btn:active, .star-btn:active{
+	background-color: #285e7b;
+}
+.small-zipper{
+	width: 280px;
+}

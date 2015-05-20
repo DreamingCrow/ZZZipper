@@ -1,0 +1,91 @@
+body{
+	background: #0b1c33; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  #1e5799 0%, #2989d8 24%, #207cca 64%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0b1c33), color-stop(10%,#0f2540), color-stop(20%,#15314f), color-stop(30%,#153353), color-stop(40%,#1a3f63), color-stop(50%,#255279), color-stop(60%,#285880), color-stop(70%,#305e87), color-stop(80%,#446d92), color-stop(90%,#537495), color-stop(100%,#5b7696)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* IE10+ */
+	background: linear-gradient(45deg, #0b1c33 0%,#0f2540 10%,#15314f 20%,#153353 30%,#1a3f63 40%,#255279 50%,#285880 60%,#305e87 70%,#446d92 80%,#537495 90%,#5b7696 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b1c33', endColorstr='#5b7696',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+section{
+	position: relative;
+	width: 700px;
+	margin: 212px auto;
+}
+h1{
+	font-size: 36px;
+	letter-spacing: 0.05em;
+	margin: 26px 0;
+}
+p{
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 60px;
+	letter-spacing: 0.1em;
+}
+hr{
+	width: 90%;
+}
+a{
+	font-size: 18px;
+	color: #fff;
+}
+.sign-btn{
+	width: 350px;
+	height: 70px;
+	background: #5c77ac; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5c77ac 0%, #4e6aa3 33%, #3d5793 66%, #314985 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5c77ac), color-stop(33%,#4e6aa3), color-stop(66%,#3d5793), color-stop(100%,#314985)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5c77ac 0%,#4e6aa3 33%,#3d5793 66%,#314985 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5c77ac 0%,#4e6aa3 33%,#3d5793 66%,#314985 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5c77ac 0%,#4e6aa3 33%,#3d5793 66%,#314985 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5c77ac 0%,#4e6aa3 33%,#3d5793 66%,#314985 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c77ac', endColorstr='#314985',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	border: 0px solid #000;
+	border-radius: 5px;
+	font-size: 24px;
+	font-weight: 300;
+	color: #fff;
+	margin: 67px 0 40px 0;
+}
+.sign-btn span{
+	font-weight: 300;
+	height: 100%;
+	vertical-align: middle;
+}
+.sign-btn:hover{
+	background: #5c77ac; /* Old browsers */
+	background: -moz-linear-gradient(top, #314985 0%, #3d5793 33%, #4e6aa3 66%, #5c77ac 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#314985), color-stop(33%,#3d5793), color-stop(66%,#4e6aa3), color-stop(100%,#5c77ac)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #314985 0%,#3d5793 33%,#4e6aa3 66%,#5c77ac 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #314985 0%,#3d5793 33%,#4e6aa3 66%,#5c77ac 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #314985 0%,#3d5793 33%,#4e6aa3 66%,#5c77ac 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #314985 0%,#3d5793 33%,#4e6aa3 66%,#5c77ac 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d5793', endColorstr='#5c77ac',GradientType=0 ); /* IE6-9 */
+}
+.sign-btn:active{
+	background: #314985;
+}
+.sign-btn span.sign{
+	border-right: 1px solid #4f6aa2;
+	font-size: 60px;
+	font-weight: bold;
+	padding-right: 20px;
+}
+.sign-btn span.btn-name{
+	border-left: 1px solid #3a538e;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
