@@ -912,6 +912,7 @@ a.menu_tooltip span:before{
 	/*color: #05293d;*/
 	font-weight: bold;
 	background-color: rgba(2,140,38,1);
+    text-transform: uppercase;
 }
 .radio-on{
 	border: 2px solid #05293d;
