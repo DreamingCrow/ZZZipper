@@ -2,12 +2,12 @@
 var panel = document.getElementById('panel');
 var user = document.getElementById('user');
 var settings = document.getElementById('settings');
-	settings.style.minHeight = panel.clientHeight - 230 + "px";
+	// settings.style.minHeight = panel.clientHeight - 230 + "px";
 var settingsBtn = document.getElementById('settings-btn');
 var settingCloseBtn = document.getElementById('close-btn');
 var profile = document.getElementById('profile');
 var anotherProfile = document.getElementById('another-profile');
-	anotherProfile.style.minHeight = panel.clientHeight - 230 + "px";
+	// anotherProfile.style.minHeight = panel.clientHeight - 230 + "px";
 var messages = document.getElementById('messages');
 var views = document.getElementById('views');
 var photos = document.getElementById('photos');
@@ -52,12 +52,12 @@ var commonInt = document.getElementById('common-int');
 var tabs = [profile,messages,views,photos,likes,pokes,search,help];
 var tabsName = ["profile","messages","views","photos","likes","pokes","search","help"];
 
-for (var i = 0, j = tabs.length; i < j; i++) {
-	tabs[i].style.height = panel.clientHeight - 240 + "px";
-};
+// for (var i = 0, j = tabs.length; i < j; i++) {
+// 	tabs[i].style.height = panel.clientHeight - 240 + "px";
+// };
 
 var content = document.getElementById('content');
-	content.style.height = panel.clientHeight - 80 + "px";
+	// content.style.height = panel.clientHeight - 80 + "px";
 
 	user.addEventListener('click', function(){
 		panel.classList.toggle('not-active');
@@ -122,6 +122,9 @@ hideAnotherProfileBtn.addEventListener('click', function(){
 	anotherProfile.classList.remove('open');
 	removeClasses();
 });
+
+
+var personalLinks = document.getElementById('personalLinks');
 
 
 			/*			Function Change Button			*/
@@ -360,3 +363,21 @@ var searchForm = document.getElementById('search_form');
 		darkBackground.classList.add('active');
 		panel.classList.add('not-active');
 	})
+
+// if (typeof personalLinks.style.transform == 'undefined' && panel.offsetWidth < 80) {
+// 	personalLinks.style.visibility = "hidden";
+// 	alert(panel.offsetWidth);
+// };
+panel.addEventListener('click',function(){
+	setTimeout(function(){
+		if (typeof personalLinks.style.transform == 'undefined' && panel.offsetWidth < 80) {
+			personalLinks.style.visibility = "hidden";
+		} else{
+			personalLinks.style.visibility = "visible";
+		};
+	} ,400)
+});
+
+if (typeof personalLinks.style.transform == 'undefined' && panel.offsetWidth < 80) {
+	personalLinks.style.visibility = "hidden";
+};

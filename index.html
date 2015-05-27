@@ -49,6 +49,7 @@
 		</div>
 		<button>Skip All Tips</button>
 	</section>
+
 	<section class="dark-tooltip-background" id="dark-tooltip-background">
 	</section>
 
@@ -123,7 +124,7 @@
 					<span class="menuElem">Help</span>
 					<span class="newMessLikes invisible"></span>
 				</li>
-				<p class="personalLinks">
+				<p class="personalLinks" id="personalLinks">
 					<a href="#">Privacy</a> |
 					<a href="#">Terms</a> |
 					<!-- <a href="#">Adverticing</a> | -->
@@ -3551,7 +3552,7 @@
 				<img src="images/search_b.png" class="page-title" alt=""> SEARCH
 			</h3>
 			<form action="" id="search_form">
-				<h3>Basic Info</h3>
+				<h3><img src="images/sex-symbol.png" alt="" class="page-title"> Basic Info</h3>
 				<input type="radio" name="sex" id="find-men" value="man">
 				<label for="find-men">
 					<img src="images/man_g.png" class="blue" alt="">
@@ -3571,8 +3572,8 @@
 				<p class="big-size">
 					<b>Age</b> 
 					<select>
-						<option value="18">18</option>
-						<option value="19" selected>19</option>
+						<option value="18" selected>18</option>
+						<option value="19">19</option>
 						<option value="20">20</option>
 						<option value="21">21</option>
 						<option value="22">22</option>
@@ -3584,62 +3585,115 @@
 						<option value="20">20</option>
 						<option value="21">21</option>
 						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="" disabled> </option>
+						<option value="95">95</option>
+						<option value="96">96</option>
+						<option value="97">97</option>
+						<option value="98">98</option>
+						<option value="99" selected>99</option>
 					</select>
 				</p>
-				<p class="search-lang">
-					<span>Language</span> 
-					<select name="" id="">
-						<option value="">Arabic</option>
-						<option value="">Bulgarian</option>
-						<option value="">Chinese</option>
-						<option value="">Croatian</option>
-						<option value="">Czech</option>
-						<option value="">German</option>
-						<option value="">Estonian</option>
-						<option value="" selected>English</option>
-						<option value="">French</option>
-						<option value="">Italian</option>
-						<option value="">Japanese</option>
-						<option value="">Korean</option>
-						<option value="">Latvian</option>
-						<option value="">Lithuanian</option>
-						<option value="">Norvegian</option>
-						<option value="">Polish</option>
-						<option value="">Portuguese</option>
-						<option value="">Romanian</option>
-						<option value="">Russian</option>
-						<option value="">Spanish</option>
-						<option value="">Swedish</option>
-						<option value="">Thai</option>
-						<option value="">Turkish</option>
-						<option value="">Ukrainian</option>
-						<option value="" disabled></option>
-					</select>
+				<h3>
+					<!-- <img src="images/com_int.png" class="page-title" alt=""> --> Language
 					<br>
-					<span>Religion</span> <select name="" id="">
-						<option value="">Atheism</option>
-						<option value="">Buddhism</option>
-						<option value="">Confucianism</option>
-						<option value="">Christians</option>
-						<option value="">Hinduism</option>
-						<option value="">Islam</option>
-						<option value="">Judaism</option>
-						<option value="">Sikhism</option>
-						<option value="">Spiritism</option>
-						<option value="" disabled></option>
-					</select>
+				</h3>
+				<div class="checkbox search-lang">
+					<input type="checkbox" id="arabic">
+					<label for="arabic">Arabic</label><br>
+					<input type="checkbox" id="bulgarian">
+					<label for="bulgarian">Bulgarian</label><br>
+					<input type="checkbox" id="chinese">
+					<label for="chinese">Chinese</label><br>
+					<input type="checkbox" id="croatian">
+					<label for="croatian">Croatian</label><br>
+					<input type="checkbox" id="czech">
+					<label for="czech">Czech</label><br>
+					<input type="checkbox" id="german">
+					<label for="german">German</label><br>
+					<input type="checkbox" id="estonian">
+					<label for="estonian">Estonian</label><br>
+					<input type="checkbox" id="english">
+					<label for="english">English</label><br>
+					<input type="checkbox" id="french">
+					<label for="french">French</label><br>
+					<input type="checkbox" id="italian">
+					<label for="italian">Italian</label><br>
+					<input type="checkbox" id="japanese">
+					<label for="japanese">Japanese</label><br>
+					<input type="checkbox" id="korean">
+					<label for="korean">Korean</label><br>
+					<input type="checkbox" id="latvian">
+					<label for="latvian">Latvian</label><br>
+					<input type="checkbox" id="lithuanian">
+					<label for="lithuanian">Lithuanian</label><br>
+					<input type="checkbox" id="norvegian">
+					<label for="norvegian">Norvegian</label><br>
+					<input type="checkbox" id="polish">
+					<label for="polish">Polish</label><br>
+					<input type="checkbox" id="portuguese">
+					<label for="portuguese">Portuguese</label><br>
+					<input type="checkbox" id="romanian">
+					<label for="romanian">Romanian</label><br>
+					<input type="checkbox" id="russian">
+					<label for="russian">Russian</label><br>
+					<input type="checkbox" id="spanish">
+					<label for="spanish">Spanish</label><br>
+					<input type="checkbox" id="swedish">
+					<label for="swedish">Swedish</label><br>
+					<input type="checkbox" id="thai">
+					<label for="thai">Thai</label><br>
+					<input type="checkbox" id="turkish">
+					<label for="turkish">Turkish</label><br>
+					<input type="checkbox" id="ukrainian">
+					<label for="ukrainian">Ukrainian</label><br>
+				</div>
+				<br>
+				<h3>
+					<!-- <img src="images/com_int.png" class="page-title" alt=""> --> Religion
 					<br>
-					<span>Politics</span> <select name="" id="">
-						<option value="">Capitalist</option>
-						<option value="">Communist</option>
-						<option value="">Democrat</option>
-						<option value="">Monarchist</option>
-						<option value="">Liberal</option>
-						<option value="">Republicianist</option>
-						<option value="">Socialism</option>
-						<option value="" disabled></option>
-					</select>
-				</p>
+				</h3>
+				<div class="checkbox search-lang">
+					<input type="checkbox" id="atheism">
+					<label for="atheism">Atheism</label><br>
+					<input type="checkbox" id="buddhism">
+					<label for="buddhism">Buddhism</label><br>
+					<input type="checkbox" id="confucianism">
+					<label for="confucianism">Confucianism</label><br>
+					<input type="checkbox" id="christians">
+					<label for="christians">Christians</label><br>
+					<input type="checkbox" id="hinduism">
+					<label for="hinduism">Hinduism</label><br>
+					<input type="checkbox" id="islam">
+					<label for="islam">Islam</label><br>
+					<input type="checkbox" id="judaism">
+					<label for="judaism">Judaism</label><br>
+					<input type="checkbox" id="sikhism">
+					<label for="sikhism">Sikhism</label><br>
+					<input type="checkbox" id="spiritism">
+					<label for="spiritism">Spiritism</label><br>
+				</div>
+				<br>
+				<h3>
+					<!-- <img src="images/com_int.png" class="page-title" alt=""> --> Politics
+					<br>
+				</h3>
+				<div class="checkbox search-lang">
+					<input type="checkbox" id="capitalist">
+					<label for="capitalist">Capitalist</label><br>
+					<input type="checkbox" id="communist">
+					<label for="communist">Communist</label><br>
+					<input type="checkbox" id="democrat">
+					<label for="democrat">Democrat</label><br>
+					<input type="checkbox" id="monarchist">
+					<label for="monarchist">Monarchist</label><br>
+					<input type="checkbox" id="liberal">
+					<label for="liberal">Liberal</label><br>
+					<input type="checkbox" id="republicianist">
+					<label for="republicianist">Republicianist</label><br>
+					<input type="checkbox" id="socialist">
+					<label for="socialist">Socialist</label><br>
+				</div>
 				<br>
 				<h3>
 					<img src="images/com_int.png" class="page-title" alt=""> Interests
@@ -3703,7 +3757,7 @@
 							<button class="profile-button">
 								<img src="images/Layer-44.png" alt=""> <span>View Profile</span>
 							</button>
-							<button class="profile-button not-upgraded">
+							<button class="profile-button not-upgraded hidden">
 								<img src="images/e.png" alt=""> <span>View Profiles Anonymously</span>
 							</button>
 							<p class="invisible">

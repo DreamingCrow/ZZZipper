@@ -1,4 +1,4 @@
-html, body{
+html, body,.content{
 	background: #0b1c33; /* Old browsers */
 	background: -moz-linear-gradient(45deg,  #1e5799 0%, #2989d8 24%, #207cca 64%, #7db9e8 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0b1c33), color-stop(10%,#0f2540), color-stop(20%,#15314f), color-stop(30%,#153353), color-stop(40%,#1a3f63), color-stop(50%,#255279), color-stop(60%,#285880), color-stop(70%,#305e87), color-stop(80%,#446d92), color-stop(90%,#537495), color-stop(100%,#5b7696)); /* Chrome,Safari4+ */
@@ -78,8 +78,8 @@ legend,
 .search,
 .help{
 	top: 0;
-	bottom: 0;
-	height: 100%;
+	/*bottom: 0;*/
+	min-height: 1182px;
 	background-color: #cdd9df;
 	box-shadow: 0 0 10px #000;
 	-webkit-transition: all 0.3s ease;
@@ -912,7 +912,7 @@ a.menu_tooltip span:before{
 	/*color: #05293d;*/
 	font-weight: bold;
 	background-color: rgba(2,140,38,1);
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 .radio-on{
 	border: 2px solid #05293d;
@@ -1112,6 +1112,9 @@ a.menu_tooltip span:before{
 .receive-mess .date{
 	margin-left: 8px;
 }
+textarea{
+	resize:none;
+}
 
 			/*			Upgrade field			*/
 .upgrade{
@@ -1120,9 +1123,9 @@ a.menu_tooltip span:before{
 	left: 0;
 	top: 0;
 	right: 0;
-	bottom: 0;
+	/*bottom: 0;*/
 	width: 100%;
-	height: 100%;
+	min-height: 1182px;
 	background-color: rgba(5,41,61,.5);
 	z-index: 750;
 }
@@ -1446,6 +1449,7 @@ button.golden-btn:hover{
 	font-weight: bold;
 }
 .search .width80{
+	position: relative;
 	margin-left: 13%;
 }
 .search form img{
@@ -1508,15 +1512,43 @@ form>p.search-lang>select{
 .search input[type=radio]:checked + label{
 	color: #05293d;
 	font-weight: bold;
+	text-transform: uppercase;
 }
-.search input[type=checkbox]{
+.search input[type=checkbox]+label{
+	position: relative;
 	width: 20px;
 	height: 20px;
 	margin-left: 10%;
 	margin-bottom: 10px;
 }
-.checkbox>*{
-	vertical-align: middle;
+.search input[type=checkbox]{
+	display: none;
+}
+.search input[type=checkbox]+label:before{
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 2px solid #25495d;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.search input[type=checkbox]:checked+label:before{
+	background-image: url(../images/check.png);
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+}
+.checkbox.search-lang{
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	column-count:2;
+	-moz-column-gap: 30px;
+	-webkit-column-gap: 30px;
+	column-gap: 30px;
+	-moz-column-rule: 1px solid transparent;
+	-webkit-column-rule: 1px solid transparent;
+	column-rule: 1px solid transparent;
+	margin-left: 0;
 }
 .search form select{
 	width: 20%;
@@ -1526,6 +1558,11 @@ form>p.search-lang>select{
 	font-size: 18px;
 	color: #05293d;
 	border: 1px solid #05293d;
+	text-align: center;
+	-ms-appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
 	text-align: center;
 }
 .search form option{
@@ -1547,6 +1584,9 @@ form>p.search-lang>select{
 	width: 60%;
 	height: 30px;
 	text-align: left;
+}
+.search .green-btn{
+	position: relative;
 }
 .green-btn{
 	background-color: #29c319;
@@ -1594,6 +1634,9 @@ form>p.search-lang>select{
 .search-results.active{
 	left: 0px;
 }
+#search_form .page-title{
+	height: 16px;
+}
 
 			/*			Help			*/
 .help{
@@ -1640,11 +1683,14 @@ form>p.search-lang>select{
 
 			/*			Main content			*/
 .content{
-	padding-top: 100px;
+	/*min-height: 1182px;*/
 	background-attachment: fixed;
-	/*margin-bottom: -100px;*/
-	/*height: 100%;*/
 	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 img.main-logo{
 	position: fixed;
@@ -2618,8 +2664,12 @@ hr{
 	.personalLinks{
 		font-size: 16px;
 		line-height: 0.6em;
+		-ms-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-webkit-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
 		transform: rotate(270deg);
-		transform-origin: left top 0;
+		/*transform-origin: left top 0;*/
 		width: 300px;
 		padding-top: 5px;
 		margin-top: 305px;
