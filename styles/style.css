@@ -1169,7 +1169,7 @@ textarea{
 	line-height: 2em;
 	font-size: 18px;
 }
-.columns>p{
+/*.columns>p{
 	font-size: 18px;
 	padding: 10px;
 	width: 250px;
@@ -1180,15 +1180,39 @@ textarea{
 .columns>p.active{
 	border: 1px solid #05293d;
 	color: #05293d;
+}*/
+input[type=radio].upgrade-plan{
+	display: none;
 }
-.columns p>span{
+input[type=radio].upgrade-plan+label{
+	position: relative;
+	display: block;
+	font-size: 18px;
+	padding: 10px;
+	width: 250px;
+	color: #35596d;
+	cursor: default;
+	margin-left: 30px;
+	border:1px solid transparent;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+input[type=radio]:checked.upgrade-plan+label{
+	border: 1px solid #05293d;
+	color: #05293d;
+}
+.columns label.upgrade-plan>span{
 	position: absolute;
 	background-color: #349B34;
 	color: #fff;
 	font-size: 18px;
 	padding: 10px;
-	right: 50px;
-	top: 50px;
+	right: -10px;
+	top: -10px;
+	visibility: hidden;
+}
+input[type=radio]:checked.upgrade-plan+label>span{
+	visibility: visible;
 }
 .upgrade img{
 	position: relative;
@@ -1514,17 +1538,17 @@ form>p.search-lang>select{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.search input[type=checkbox]+label{
+input[type=checkbox]+label{
 	position: relative;
 	width: 20px;
 	height: 20px;
 	margin-left: 10%;
 	margin-bottom: 10px;
 }
-.search input[type=checkbox]{
+input[type=checkbox]{
 	display: none;
 }
-.search input[type=checkbox]+label:before{
+input[type=checkbox]+label:before{
 	content: "";
 	display: inline-block;
 	width: 14px;
@@ -1533,7 +1557,7 @@ form>p.search-lang>select{
 	border-radius: 3px;
 	margin-right: 10px;
 }
-.search input[type=checkbox]:checked+label:before{
+input[type=checkbox]:checked+label:before{
 	background-image: url(../images/check.png);
 	background-position: 2px 2px;
 	background-repeat: no-repeat;
@@ -2976,6 +3000,18 @@ hr{
 	.search{
 		width: 100%;
 	}
+	.checkbox.search-lang{
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		column-count:1;
+		-moz-column-gap: 30px;
+		-webkit-column-gap: 30px;
+		column-gap: 30px;
+		-moz-column-rule: 1px solid transparent;
+		-webkit-column-rule: 1px solid transparent;
+		column-rule: 1px solid transparent;
+		margin-left: 0;
+	}
 
 			/*			Help			*/
 	.help{
@@ -3481,6 +3517,18 @@ hr{
 	}
 	.search form select{
 		margin: 0 5px;
+	}
+	.checkbox.search-lang{
+		-moz-column-count:1;
+		-webkit-column-count:1;
+		column-count:1;
+		-moz-column-gap: 30px;
+		-webkit-column-gap: 30px;
+		column-gap: 30px;
+		-moz-column-rule: 1px solid transparent;
+		-webkit-column-rule: 1px solid transparent;
+		column-rule: 1px solid transparent;
+		margin-left: 0;
 	}
 
 			/*			Likes			*/
