@@ -1115,6 +1115,9 @@ a.menu_tooltip span:before{
 textarea{
 	resize:none;
 }
+p.send-btn{
+	text-align: right;
+}
 
 			/*			Upgrade field			*/
 .upgrade{
@@ -1561,6 +1564,10 @@ input[type=checkbox]:checked+label:before{
 	background-image: url(../images/check.png);
 	background-position: 2px 2px;
 	background-repeat: no-repeat;
+}
+/*red-check*/
+input[type=checkbox].red-check:checked+label:before{
+	background-image: url(../images/check-red.png);
 }
 .checkbox.search-lang{
 	-moz-column-count:2;
