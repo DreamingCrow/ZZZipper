@@ -64,9 +64,10 @@ var content = document.getElementById('content');
 	});
 
 	settingsBtn.addEventListener('click', function(){
-		removeClasses();
+		// removeClasses();
 		panel.classList.add('not-active');
 		settings.classList.toggle('settings-open');
+		window.scrollTo(0, 0);
 	});
 
 	settingCloseBtn.addEventListener('click', function(){
@@ -115,6 +116,7 @@ for (var i = 0, j= hideButtons.length; i < j; i++) {
 		var i = k;
 		hideButtons[i].addEventListener('click', function(){
 			toggleClass(buttons[i], tabs[i], tabsName[i]);
+			window.scrollTo(0, 0);
 		});
 	})(k);
 };
@@ -142,6 +144,7 @@ function toggleClass(btn, tab, tabName){
 		allMessages.classList.remove('invisible');
 		userMessages.classList.add('invisible');
 		darkBackground.classList.add('active');
+		// window.scrollTo(0, 0);
 	};
 };
 function removeClasses(){
@@ -153,6 +156,7 @@ function removeClasses(){
 		darkBackground.classList.remove('active');
 		settings.classList.remove('settings-open');
 		searchResults.classList.remove('active');
+		window.scrollTo(0, 0);
 	};
 };
 
@@ -341,6 +345,7 @@ var upgradePhotoBtn = document.getElementById("upgrade-photo-btn");
 	});
 	upgradePhotoBtn.addEventListener("click",function(){
 		upgrade.classList.add('active');
+		window.scrollTo(0, 0);
 	});
 	// upgradeMainBtn.addEventListener("click",function(){
 	// 	upgrade.classList.add('active');
@@ -362,6 +367,7 @@ var searchForm = document.getElementById('search_form');
 		searchResults.classList.add('active');
 		darkBackground.classList.add('active');
 		panel.classList.add('not-active');
+		window.scrollTo(0, 0);
 	})
 
 // if (typeof personalLinks.style.transform == 'undefined' && panel.offsetWidth < 80) {

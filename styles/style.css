@@ -1920,12 +1920,14 @@ hr{
 }
 .online:before{
 	content: "";
-	position: absolute;
+	position: relative;
+	display: inline-block;
 	margin-top: 4px;
 	margin-left: -9px;
+	margin-right: 2px;
 	border: 1px solid #00B80C;
-	min-width: 6px;
-	min-height: 6px;
+	width: 6px;
+	height: 6px;
 	border-radius: 50%;
 	background-color: #00E210;
 }
@@ -2091,6 +2093,9 @@ hr{
 		margin-top: -75px;
 		margin-left: -300px;
 	}
+	.mainContent fieldset {
+		width: 70%;
+	}
 }
 @media only screen and (min-width : 1000px) and (max-width : 1366px){
 	.panel{
@@ -2139,7 +2144,7 @@ hr{
 			/*			Another Profile			*/
 	.another-profile{
 		width: 800px;
-		height: 2050px;
+		/*height: 2050px;*/
 	}
 	.another-profile>.width80 .another-user{
 		position: relative;
@@ -2214,6 +2219,13 @@ hr{
 		margin-top: -70px;
 		margin-left: -250px;
 	}
+	.mainContent fieldset {
+		width: 85%;
+		margin-left: 70px;
+	}
+	.changeButton{
+		margin: 0 auto;
+	}
 }
 @media only screen and (min-width : 900px) and (max-width : 999px){
 	.panel{
@@ -2234,7 +2246,7 @@ hr{
 			/*			Profile			*/
 	.profile{
 		width: 91%;
-		min-height: 2000px;
+		/*min-height: 2000px;*/
 	}
 	.hide-btn{
 		width: 50px;
@@ -2269,7 +2281,7 @@ hr{
 			/*			Another Profile			*/
 	.another-profile{
 		width: 800px;
-		height: 2050px;
+		/*height: 2050px;*/
 	}
 	.another-profile>.width80 .another-user{
 		position: relative;
@@ -2338,7 +2350,7 @@ hr{
 			/*			Help			*/
 	.help{
 		width: 90%;
-		min-height: 1850px;
+		/*min-height: 1850px;*/
 	}
 	.help-menu,
 	.help-info{
@@ -2382,12 +2394,19 @@ hr{
 	.mainContent .top-btn{
 		left: 1%;
 	}
+	.changeButton{
+		margin: 0 auto;
+	}
 
 	img.main-logo{
 		/*left: 65%;*/
 		width: 500px;
 		margin-top: -70px;
 		margin-left: -250px;
+	}
+	.mainContent fieldset {
+		width: 85%;
+		margin-left: 70px;
 	}
 }
 @media only screen and (min-width : 600px) and (max-width : 899px){
@@ -2409,7 +2428,7 @@ hr{
 			/*			Profile			*/
 	.profile{
 		width: 86%;
-		min-height: 2050px;
+		/*min-height: 2050px;*/
 	}
 	.hide-btn{
 		width: 50px;
@@ -2447,7 +2466,28 @@ hr{
 		display: none;
 	}
 	.mainContent fieldset.inline{
-		width: 90%
+		width: 80%;
+		margin-left: 75px;
+	}
+	.interests>img{
+		/*position: relative;*/
+		width: 100%;
+	}
+	.interests div.common-interests{
+		position: relative;
+		width: 100%;
+		padding: 20px;
+		padding-bottom: 50px;
+		/*margin: 10px;*/
+	}
+	div.common-interests hr {
+		width: 95%;
+	}
+	.liked-bottom {
+		left: 10px;
+	}
+	.changeButton{
+		margin: 0 auto;
 	}
 
 	/*.menu_tooltip span{
@@ -2586,7 +2626,7 @@ hr{
 			/*			Another Profile			*/
 	.another-profile{
 		width: 500px;
-		height: 2920px;
+		/*height: 2920px;*/
 	}
 	.another-profile>.width80 .another-user{
 		width: 100%;
@@ -2684,6 +2724,9 @@ hr{
 	.user>*{
 		margin-top: 5px;
 	}
+	.user-photo-padding{
+		margin: auto;
+	}
 	.panel .active{
 		border-top: 7px solid #05293d;
 		border-bottom: 7px solid #05293d;
@@ -2700,7 +2743,7 @@ hr{
 		-webkit-transform: rotate(270deg);
 		-o-transform: rotate(270deg);
 		transform: rotate(270deg);
-		/*transform-origin: left top 0;*/
+		transform-origin: left top 0;
 		width: 300px;
 		padding-top: 5px;
 		margin-top: 305px;
@@ -2823,7 +2866,10 @@ hr{
 			/*			Profile			*/
 	.profile{
 		width: 100%;
-		min-height: 2200px;
+		/*min-height: 2200px;*/
+	}
+	.profile .width80 {
+		padding-bottom: 60px;
 	}
 	.profile .width80>h3,
 	.width80>h3{
@@ -2833,9 +2879,13 @@ hr{
 		display: none;
 	}
 	.mainContent .left-btn{
+		width: 50px;
+		display: block;
 		left: 17px;
 	}
 	.mainContent .right-btn{
+		width: 50px;
+		display: block;
 		right: 17px;
 	}
 	.profile-header{
@@ -2864,8 +2914,30 @@ hr{
 	.mainContent div.inline{
 		display: none;
 	}
-	.mainContent fieldset.inline{
+/*	.mainContent fieldset.inline{
 		width: 90%
+	}*/
+	.mainContent fieldset{
+		width: 82%
+	}
+	.interests>img{
+		/*position: relative;*/
+		width: 100%;
+	}
+	.interests div.common-interests{
+		position: relative;
+		width: 100%;
+		padding: 20px;
+		padding-bottom: 50px;
+	}
+	div.common-interests hr {
+		width: 95%;
+	}
+	.liked-bottom {
+		left: 10px;
+	}
+	.changeButton{
+		margin: 0 auto;
 	}
 
 			/*			Settings			*/
@@ -3023,7 +3095,7 @@ hr{
 			/*			Help			*/
 	.help{
 		width: 100%;
-		min-height: 2700px;
+		/*min-height: 2700px;*/
 	}
 	.help-menu,
 	.help-info{
@@ -3051,7 +3123,7 @@ hr{
 			/*			Another Profile			*/
 	.another-profile{
 		width: 100%;
-		height: 3000px;
+		/*height: 3000px;*/
 	}
 	.another-profile>.width80 .another-user{
 		width: 100%;
@@ -3290,10 +3362,22 @@ hr{
 			/*			Profile			*/
 	.profile{
 		width: 100%;
-		min-height: 2050px;
+		/*min-height: 2050px;*/
 	}
 	.hide-btn{
 		display: none;
+	}
+	.right-btn,
+	.left-btn{
+		display: block;
+		width: 40px;
+		top: 30%;
+	}
+	.mainContent .right-btn{
+		right: -5px;
+	}
+	.mainContent .left-btn{
+		left: -5px;
 	}
 	.profile-header{
 		position: relative;
@@ -3319,7 +3403,6 @@ hr{
 			/*			Another Profile			*/
 	.another-profile{
 		width: 100%;
-		height: 3000px;
 	}
 	.another-profile>.width80 .another-user{
 		width: 100%;
@@ -3450,6 +3533,7 @@ hr{
 		margin-bottom: 0;
 	}
 	.changeButton{
+		margin: 0 auto;
 		font-size: 12px;
 		padding: 5px;
 	}
