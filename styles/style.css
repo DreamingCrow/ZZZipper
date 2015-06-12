@@ -1063,6 +1063,9 @@ a.menu_tooltip span:before{
 	color: #fff;
 	font-size: 16px;
 }
+.mess form .send-btn > img {
+	margin: 0 12% 0 10px;
+}
 .mess p>input:hover{
 	background-color: #25495d;
 }
@@ -2537,6 +2540,9 @@ hr{
 	.mess{
 		width: 100%;
 	}
+/*	.mess form .send-btn > img {
+		margin: 0 0 0 10px;
+	}*/
 	.user-photo-padding{
 		padding: 0;
 		width: 40px;
